@@ -20,6 +20,8 @@ def index(request):
 
 def console(request):
     return render(request,'pages/console.html')
+def console1(request):
+    return render(request,'pages/console1.html')
 
 
 @login_required

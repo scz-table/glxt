@@ -1,7 +1,7 @@
 [
   {
     "title": "主页",
-    "href": "pages/console.html",
+    "href": "console",
     "fontFamily": "ok-icon",
     "icon": "&#xe654;",
     "spread": true,
@@ -14,8 +14,8 @@
     "icon": "&#xe6b8;",
     "children": [
       {
-        "title": "控制台一",
-        "href": "pages/console1.html",
+        "title": "控制台示例",
+        "href": "console1",
         "icon": "&#xe68e;"
       }
     ]

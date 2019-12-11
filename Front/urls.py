@@ -4,6 +4,7 @@ app_name='front'
 urlpatterns = [
     path('',views.index,name='front_index'),
     path('console/',views.console,name='front_console'),
+    path('console1/',views.console1,name='front_console1'),
     path('signin/',views.signin,name='front_signin'),
     path('signup/',views.signup,name='front_signup'),
     path('my_logout/',views.my_logout,name='my_logout'),
