@@ -1,0 +1,7 @@
+{% extends 'Front/base.html' %}
+    {% load static %}
+    {% block head %}
+        {{ block.super }}
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico'%}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{% static 'css/okadmin.css'%}">
+    {% endblock %}

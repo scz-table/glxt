@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+{% block html_lang %}
+    <html lang="en">
+{% endblock %}
+<head>
+    {% block head %}
+        {% include 'Front/head.html' %}
+    {% endblock %}
+
+    {% block title %}
+        <title>产品管理系统</title>
+    {% endblock %}
+</head>
+{% block top_body %}
+    <body class="layui-layout-body">
+        <!-- 更换主体 Eg:orange_theme|blue_theme -->
+        <div class="layui-layout layui-layout-admin okadmin blue_theme">
+
+        {% block header %}
+            {% include 'Front/header.html' %}
+        {% endblock %}
+
+        {% block leftbar %}
+            {% include 'Front/leftbar.html' %}
+        {% endblock %}
+
+        {% block body %}
+            {% include 'Front/body.html' %}
+        {% endblock %}
+
+        {% block footer %}
+            {% include 'Front/footer.html' %}
+        {% endblock %}
+        </div>
+        <div class="yy"></div>
+
+        {% block script %}
+            {% include 'Front/script.html' %}
+        {% endblock %}
+    </body>
+{% endblock %}
+</html>

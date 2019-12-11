@@ -1,0 +1,27 @@
+
+    {% load static %}
+        <!--左侧导航区域-->
+        <div class="layui-side layui-side-menu okadmin-bg-20222A ok-left">
+            <div class="layui-side-scroll okadmin-side">
+                <div class="okadmin-logo">控制面板</div>
+                <div class="user-photo">
+                    <a class="img" title="我的头像">
+                        <img src="{% static 'images/avatar.png'%}" class="userAvatar">
+                    </a>
+                    {% if front_user.is_authenticated %}
+                        <p>你好！<span class="userName">{{ front_user_extension.fullname }}</span>, 欢迎登录</p>
+                    {% else %}
+                        <p>请您<a href="{% url 'front:front_signin' %}" style="color: #0000FF;">登录</a></p>
+                    {% endif %}
+                </div>
+                <!--左侧导航菜单-->
+                <ul id="navBar" class="layui-nav okadmin-nav okadmin-bg-20222A layui-nav-tree">
+                    <li class="layui-nav-item layui-this">
+                        <a href="javascript:" lay-id="1" data-url="{% url 'front:front_console' %}">
+                            <i is-close=false class="ok-icon">&#xe654;</i>
+                            主页
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
